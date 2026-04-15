@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trupe Rebimboca | Portfólio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.4) 50%, rgba(17, 24, 39, 1) 100%); }
+    </style>
+</head>
+<body class="bg-[#FAFAFA] text-gray-800">
+
+    <!-- Navegação -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <i data-lucide="tent" id="nav-logo-icon" class="w-8 h-8 text-red-500"></i>
+                <span id="nav-logo-text" class="text-2xl font-black tracking-tighter text-white">TRUPE REBIMBOCA</span>
+            </div>
+
+            <!-- Menu Desktop -->
+            <div id="nav-links" class="hidden md:flex gap-8 font-semibold text-white">
+                <a href="#sobre" class="hover:text-red-500 transition-colors">Sobre</a>
+                <a href="#espetaculos" class="hover:text-red-500 transition-colors">Espetáculos</a>
+                <a href="#quintal" class="hover:text-red-500 transition-colors">Quintal Cultural</a>
+                <a href="#contato" class="hover:text-red-500 transition-colors">Contacto</a>
+            </div>
+
+            <!-- Botão Mobile -->
+            <button class="md:hidden text-white" onclick="toggleMenu()">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 flex flex-col items-center gap-4 font-semibold text-gray-700">
+            <a href="#sobre" onclick="toggleMenu()" class="w-full text-center py-2 hover:bg-gray-50">Sobre</a>
+            <a href="#espetaculos" onclick="toggleMenu()" class="w-full text-center py-2 hover:bg-gray-50">Espetáculos</a>
+            <a href="#quintal" onclick="toggleMenu()" class="w-full text-center py-2 hover:bg-gray-50">Quintal Cultural</a>
+            <a href="#contato" onclick="toggleMenu()" class="w-full text-center py-2 hover:bg-gray-50">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+        <div class="absolute inset-0 z-0 opacity-60 bg-cover bg-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1_HDJ6SUnByYjZ3QznwFbs24UMl3888Td');"></div>
+        <div class="absolute inset-0 z-0 hero-gradient"></div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full border border-red-500/50 bg-red-500/20 text-red-300 font-semibold text-sm backdrop-blur-sm">
+                Desde 2010 • Fortaleza, CE
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                A arte do encontro, <br><span class="text-red-500">do riso</span> e da cultura popular.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                Pesquisando o teatro de rua e a magia do circo na figura do palhaço popular brasileiro.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5585992280986?text=Olá! Gostaria de saber mais sobre a Trupe Rebimboca." target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
+                    Chama nóissssss! <i data-lucide="smile" class="w-5 h-5"></i>
+                </a>
+                <a href="#espetaculos" class="bg-white/10 hover:bg-white/20 text-white backdrop-blur-md px-8 py-4 rounded-full font-bold text-lg transition-all border border-white/20 flex items-center justify-center">
+                    Ver Espetáculos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-24 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative group">
+                        <img src="https://drive.google.com/uc?export=view&id=11cRvZXCGkRigjXalw9Xstg3krFiVWyYq" alt="Apresentação da Trupe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                            <p class="text-white font-bold text-xl">Arte que transforma comunidades</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex items-center gap-2 text-red-600 font-bold mb-4 uppercase tracking-wider">
+                        <i data-lucide="theater" class="w-5 h-5"></i> Quem Somos
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">Nascidos no Grande Bom Jardim</h2>
+                    <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                        <p>A <strong>Trupe Rebimboca</strong> investiga o teatro de rua e o circo, focando-se na figura do palhaço popular. Sediados no bairro Siqueira, em Fortaleza, actuamos desde 2010 democratizando o acesso à arte.</p>
+                        <div class="p-6 bg-red-50 rounded-2xl border-l-4 border-red-500">
+                            <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-500"></i> Legado do Mestre Pimenta
+                            </h3>
+                            <p class="text-base text-gray-700">A nossa pesquisa tem como base o acervo do <strong>Mestre Pimenta</strong>, guardião de comédias e melodramas históricos.estudado e registado pelo nosso grupo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citação -->
+    <section class="py-16 bg-red-600 text-white text-center">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-black italic mb-6">
+                "O circo é uma porta aberta para a imaginação e o riso. Quando o público rir é quando o palhaço se sente mais feliz."
+            </h2>
+            <p class="text-xl font-bold uppercase tracking-widest text-red-200">— Palhaço Pimenta</p>
+        </div>
+    </section>
+
+    <!-- Espetáculos -->
+    <section id="espetaculos" class="py-24 bg-[#FAFAFA]">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-4xl font-black text-gray-900 mb-4">Os Nossos Espetáculos</h2>
+            <p class="text-xl text-gray-600 mb-16">Leve a alegria para onde o povo está.</p>
+
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://drive.google.com/uc?export=view&id=1QOXAW-Sf7-iGlCn5MaeU_BYH9ZtjySKY" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-3">Fuxica e Tetel</h3>
+                        <p class="text-gray-600">Saudando o riso alheio com palhaçaria clássica e reprises cômicas.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://drive.google.com/uc?export=view&id=1_XhZ4_qc4KNhcmj-78yRjDvGF3i-AOxQ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-3">Palhaçarria</h3>
+                        <p class="text-gray-600">Um espetáculo interativo onde o público torna-se o artista da festa.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://drive.google.com/uc?export=view&id=1WB4SkiIqN_Kt4C4Nqh7BVsESOe2gyqmZ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black mb-3">Maré de Alegria</h3>
+                        <p class="text-gray-600">Intervenções lúdicas com pernas de pau e malabares encantadores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quintal -->
+    <section id="quintal" class="py-24 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-black mb-6">Quintal Cultural Dona Francisca</h2>
+                <p class="text-xl text-gray-300 mb-8 font-light">O nosso projeto de ocupação artística comunitária no bairro Siqueira. Arte gratuita e resistência na periferia.</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://drive.google.com/uc?export=view&id=1mG_AjbeP2H17xzCkHz-1Cxsi7g0xMUQ4" class="rounded-xl h-32 w-full object-cover">
+                    <img src="https://drive.google.com/uc?export=view&id=1adLyyd-mYwGKfb8jOgfxDWQ3TqGhcEdQ" class="rounded-xl h-32 w-full object-cover">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <img src="https://drive.google.com/uc?export=view&id=1KLdAqBukwB9KDwCBIA3RQuqr5yVUFrlw" class="rounded-3xl w-full h-64 object-cover shadow-2xl">
+                <img src="https://drive.google.com/uc?export=view&id=1SIfL2-Rzm_rgmKvMnXRZzu4eErsIrhfN" class="rounded-3xl w-full h-64 object-cover shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-white pt-24 pb-12">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="max-w-4xl mx-auto bg-red-600 rounded-[3rem] p-12 text-center text-white shadow-2xl mb-20">
+                <h2 class="text-4xl font-black mb-4">Chama nóissssss!!!! :o)</h2>
+                <p class="text-xl mb-8">Contrate-nos para eventos, festivais ou escolas.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://wa.me/5585992280986" class="bg-white text-red-600 px-8 py-4 rounded-full font-bold shadow-lg flex items-center justify-center gap-2">
+                        <i data-lucide="phone" class="w-5 h-5"></i> WhatsApp
+                    </a>
+                    <a href="mailto:truperebimboca@gmail.com" class="bg-red-700 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2">
+                        <i data-lucide="mail" class="w-5 h-5"></i> E-mail
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="tent" class="text-red-600 w-6 h-6"></i>
+                    <span class="font-black text-xl text-gray-900 tracking-tighter">TRUPE REBIMBOCA</span>
+                </div>
+                <div class="flex gap-6">
+                    <a href="https://instagram.com/trupe_rebimboca" class="hover:text-red-600 transition-colors"><i data-lucide="instagram"></i></a>
+                    <a href="mailto:truperebimboca@gmail.com" class="hover:text-red-600 transition-colors"><i data-lucide="mail"></i></a>
+                </div>
+                <p class="text-sm">&copy; 2024 Trupe Rebimboca</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar Ícones
+        lucide.createIcons();
+
+        // Efeito Scroll Navbar
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            const logoText = document.getElementById('nav-logo-text');
+            const links = document.getElementById('nav-links');
+            const icon = document.getElementById('nav-logo-icon');
+
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white', 'shadow-md', 'py-3');
+                nav.classList.remove('bg-transparent', 'py-5');
+                logoText.classList.add('text-gray-900');
+                logoText.classList.remove('text-white');
+                links.classList.add('text-gray-600');
+                links.classList.remove('text-white');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-md', 'py-3');
+                nav.classList.add('bg-transparent', 'py-5');
+                logoText.classList.add('text-white');
+                logoText.classList.remove('text-gray-900');
+                links.classList.add('text-white');
+                links.classList.remove('text-gray-600');
+            }
+        });
+
+        // Menu Mobile Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
